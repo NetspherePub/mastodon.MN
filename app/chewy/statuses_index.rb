@@ -31,6 +31,14 @@ class StatusesIndex < Chewy::Index
         ),
       },
     },
+    tokenizer: {
+      nori_tokenizer_mixed: {
+        # https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-nori-tokenizer.html
+        type: 'nori_tokenizer',
+        decompound_mode: 'mixed',
+        discard_punctuation: 'true',
+      },
+    },
   }
 
   # We do not use delete_if option here because it would call a method that we
