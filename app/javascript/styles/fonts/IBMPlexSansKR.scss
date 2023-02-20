@@ -1,0 +1,30 @@
+@font-face {
+  font-family: mastodon-font-sans-serif;
+  src:
+    local('IBM Plex Sans KR Bold'),
+    url('../fonts/IBMPlexSansKR/IBMPlexSansKR-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: mastodon-font-sans-serif;
+  src:
+    local('IBM Plex Sans KR Medium'),
+    url('../fonts/IBMPlexSansKR/IBMPlexSansKR-Medium.woff2') format('woff2');
+
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: mastodon-font-sans-serif;
+  src:
+    local('IBM Plex Sans KR'),
+    url('../fonts/IBMPlexSansKR/IBMPlexSansKR-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
