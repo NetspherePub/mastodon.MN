@@ -2,7 +2,9 @@
   font-family: mastodon-font-sans-serif;
   src:
     local('IBM Plex Sans KR Bold'),
-    url('../fonts/IBMPlexSansKR/IBMPlexSansKR-Bold.woff2') format('woff2');
+    url('../fonts/IBMPlexSansKR/IBMPlexSansKR-Bold.woff2') format('woff2'),
+    url('../fonts/IBMPlexSansKR/IBMPlexSansKR-Bold.woff') format('woff'),
+    url('../fonts/IBMPlexSansKR/IBMPlexSansKR-Bold.ttf') format('truetype');
   font-weight: bold;
   font-display: swap;
   font-style: normal;
@@ -12,8 +14,9 @@
   font-family: mastodon-font-sans-serif;
   src:
     local('IBM Plex Sans KR Medium'),
-    url('../fonts/IBMPlexSansKR/IBMPlexSansKR-Medium.woff2') format('woff2');
-
+    url('../fonts/IBMPlexSansKR/IBMPlexSansKR-Medium.woff2') format('woff2'),
+    url('../fonts/IBMPlexSansKR/IBMPlexSansKR-Medium.woff') format('woff'),
+    url('../fonts/IBMPlexSansKR/IBMPlexSansKR-Medium.ttf') format('truetype');
   font-weight: 500;
   font-display: swap;
   font-style: normal;
@@ -23,7 +26,9 @@
   font-family: mastodon-font-sans-serif;
   src:
     local('IBM Plex Sans KR'),
-    url('../fonts/IBMPlexSansKR/IBMPlexSansKR-Regular.woff2') format('woff2');
+    url('../fonts/IBMPlexSansKR/IBMPlexSansKR-Regular.woff2') format('woff2'),
+    url('../fonts/IBMPlexSansKR/IBMPlexSansKR-Regular.woff') format('woff'),
+    url('../fonts/IBMPlexSansKR/IBMPlexSansKR-Regular.ttf') format('truetype');
   font-weight: normal;
   font-display: swap;
   font-style: normal;
