@@ -4,7 +4,7 @@ class TagsIndex < Chewy::Index
   settings index: { refresh_interval: '30s' }, analysis: {
     analyzer: {
       content: {
-        tokenizer: 'keyword',
+        tokenizer: 'nori_tokenizer_mixed',
         filter: %w(lowercase asciifolding cjk_width),
       },
 
@@ -19,6 +19,12 @@ class TagsIndex < Chewy::Index
         type: 'edge_ngram',
         min_gram: 2,
         max_gram: 15,
+      },
+      nori_tokenizer_mixed: {
+        # https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-nori-tokenizer.html
+        type: 'nori_tokenizer',
+        decompound_mode: 'mixed',
+        discard_punctuation: 'true',
       },
     },
   }
