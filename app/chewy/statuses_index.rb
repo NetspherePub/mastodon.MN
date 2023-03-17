@@ -20,7 +20,7 @@ class StatusesIndex < Chewy::Index
     },
     analyzer: {
       content: {
-        tokenizer: 'uax_url_email',
+        tokenizer: 'nori_tokenizer_mixed',
         filter: %w(
           english_possessive_stemmer
           lowercase
@@ -29,6 +29,14 @@ class StatusesIndex < Chewy::Index
           english_stop
           english_stemmer
         ),
+      },
+    },
+    tokenizer: {
+      nori_tokenizer_mixed: {
+        # https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-nori-tokenizer.html
+        type: 'nori_tokenizer',
+        decompound_mode: 'mixed',
+        discard_punctuation: 'true',
       },
     },
   }
