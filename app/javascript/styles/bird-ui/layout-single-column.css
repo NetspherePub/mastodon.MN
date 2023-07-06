@@ -60,7 +60,7 @@
   --color-outer-space: #42485a;
 
   /* Font related */
-  --font-stack: system-ui, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, Inter, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-stack: mastodon-font-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, Inter, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-size: 15px;
   --font-size-smaller: 13px;
   --font-size-12: 12px;
