@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.5.9 */
+   1.6.0 */
 
 /* CSS variables */
 :root {
@@ -511,6 +511,17 @@ body.layout-single-column {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   display: block;
+  transition: all 200ms;
+}
+
+/* Hide empty YouTube description */
+.layout-single-column .status-card__description:empty {
+  display: none;
+}
+
+.layout-single-column .status-card:focus,
+.layout-single-column .status-card:hover {
+  background-color: rgba(255 255 255 / .03);
 }
 
 .layout-single-column .fa-file-text::before {
@@ -1031,7 +1042,12 @@ body.embed .status__content a,
   height: calc(var(--gap-default) * 2);
   justify-content: flex-start;
   margin-bottom: 0;
-  padding-bottom: calc(var(--gap-default) / 2);
+  padding-bottom: 0;
+}
+
+/* Status action bar */
+.layout-single-column .status__action-bar {
+  margin-top: 12px;
 }
 
 /* Display name */
@@ -1858,6 +1874,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   font-size: 20px;
 }
 
+.layout-single-column .list-adder__lists .fa-times::before,
 .layout-single-column .account__wrapper .account__relationship .icon-button.active .fa::before,
 .layout-single-column .explore__search-results .account__relationship .icon-button.active .fa::before,
 .layout-single-column .notification .account__relationship .icon-button.active .fa::before {
@@ -1866,6 +1883,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   opacity: .75;
 }
 
+.layout-single-column .list-adder__lists .fa-times:hover::before,
 .layout-single-column .explore__search-results .icon-button.active:hover .fa::before,
 .layout-single-column .notification .account__relationship .icon-button.active:hover .fa::before {
   /* stylelint-disable-next-line */
