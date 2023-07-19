@@ -2021,7 +2021,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   background-color: transparent;
   border: 0;
   color: var(--color-dim);
-  display: inline-flex;
+  display: block;
   font-size: var(--font-size);
   font-weight: 400;
   gap: calc(var(--gap-default) / 2);
