@@ -2007,13 +2007,13 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   display: none;
 } */
 
-/* Joined label
+/* Joined label */
 .layout-multiple-columns .account__header__bio .account__header__fields dt:not([title]) {
   display: inline-flex;
   font-weight: 400;
   gap: calc(var(--gap-default) / 2);
   text-transform: unset;
-} */
+}
 
 .layout-multiple-columns h4,
 .layout-multiple-columns .search__popout h4,
