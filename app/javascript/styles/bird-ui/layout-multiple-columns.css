@@ -2002,10 +2002,10 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   padding: 0;
 }
 
-/* Hide label */
+/* Hide label
 .layout-multiple-columns .account__header__bio .account__header__fields dt {
   display: none;
-}
+} */
 
 /* Joined label */
 .layout-multiple-columns .account__header__bio .account__header__fields dt:not([title]) {
