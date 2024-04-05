@@ -3510,6 +3510,7 @@ body.embed .button.logo-button:hover,
   }
 
   .layout-single-column .columns-area__panels__pane--navigational .navigation-panel {
+    background: linear-gradient(90deg, #08171e00, #08171e00, #08171e00, #08171e00, #08171e00, #08171e00, #08171e00, #1e3b51) repeat fixed top left;
     flex-direction: row;
     gap: 0;
     height: 100%;
