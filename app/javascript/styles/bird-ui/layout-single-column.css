@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.4 */
+   2.0.5 */
 
 /* CSS variables */
 :root {
@@ -1729,8 +1729,7 @@ body.embed .detailed-status .video-player,
 
 .layout-single-column .media-gallery > .media-gallery__item:nth-of-type(odd),
 .layout-single-column .media-gallery > .media-gallery__item:nth-of-type(odd) > a,
-.layout-single-column .media-gallery__preview:nth-of-type(odd),
- {
+.layout-single-column .media-gallery__preview:nth-of-type(odd) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
@@ -4347,7 +4346,6 @@ body.embed .entry .detailed-status {
 /* Threaded line, actually */
 .layout-single-column .status__line {
   border-inline-start: 2px solid var(--color-thread-line);
-  -webkit-border-start: 2px solid var(--color-thread-line);
 }
 
 .layout-single-column .status__line--full::before {
